@@ -1,0 +1,29 @@
+{
+    "name": "sjss-vscode",
+    "displayName": "SJSS Language Support and Syntax Highlighting",
+    "description": "Syntax highlighting for SJSS (.sjss) files",
+    "version": "1.0.0",
+    "engines": {
+      "vscode": "^1.80.0"
+    },
+    "categories": ["Programming Languages"],
+    "contributes": {
+      "languages": [{
+        "id": "sjss",
+        "aliases": ["SJSS", "sjss"],
+        "extensions": [".sjss"],
+        "configuration": "./language-configuration.json"
+      }],
+      "grammars": [{
+        "language": "sjss",
+        "scopeName": "source.sjss",
+        "path": "./syntaxes/sjss.tmLanguage.json"
+      }]
+    },
+    "publisher": "JacobAntoine1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jacobnoah/SJSS"
+    }
+  }

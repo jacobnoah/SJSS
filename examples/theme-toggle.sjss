@@ -1,0 +1,13 @@
+body {
+  background: white;
+  color: black;
+
+  &.dark-mode {
+    background: black;
+    color: white;
+  }
+}
+
+.theme-btn:click {
+  => toggle-class body .dark-mode;
+}

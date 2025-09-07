@@ -1,0 +1,20 @@
+{
+    "name": "SJSS",
+    "scopeName": "source.sjss",
+    "fileTypes": [".sjss"],
+    "patterns": [
+      {
+        "include": "source.scss"
+      },
+      {
+        "name": "meta.js-directive.sjss",
+        "match": "^\\s*(=>)\\s*(add-class|remove-class|toggle-class)\\s*([^{}\\s]+)\\s*([^{}\\s]+)\\s*;",
+        "captures": {
+          "1": { "name": "keyword.operator.js-directive.sjss" },
+          "2": { "name": "keyword.action.js-directive.sjss" },
+          "3": { "name": "entity.name.selector.js-directive.sjss" },
+          "4": { "name": "entity.name.class.js-directive.sjss" }
+        }
+      }
+    ]
+  }

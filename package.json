@@ -1,0 +1,31 @@
+{
+  "name": "sjss-processor",
+  "version": "1.0.0",
+  "description": "This library combines SCSS files for styling and includes event-driven styling to avoid redundant common javaScript listeners",
+  "main": "src/index.js",
+  "bin": {
+    "sjss": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "sass": "^1.77.8",
+    "gonzales-pe": "^4.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobnoah/SJSS"
+  },
+  "keywords": ["sjss", "scss", "sass", "css", "javascript", "preprocessor"],
+  "author": "Your Name",
+  "bugs": {
+    "url": "https://github.com/jacobnoah/SJSS/issues"
+  },
+  "homepage": "https://github.com/jacobnoah/SJSS#readme"
+}
